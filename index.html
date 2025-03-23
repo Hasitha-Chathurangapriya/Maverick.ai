@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maverick - Futuristic Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="tech-loader">
+            <div class="spinner"></div>
+            <span>Loading Maverick...</span>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-btn" class="btn btn-theme">
+            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat-container" class="container chat-wrapper" style="display: none;">
+        <div class="chat-header">
+            <h3>Maverick<span class="status-dot"></span></h3>
+        </div>
+        <div class="options-container">
+            <button class="option-btn active" data-mode="normal">Normal Chat</button>
+            <button class="option-btn" data-mode="jobs">Job Info</button>
+            <button class="option-btn" data-mode="coding">Coding Questions</button>
+            <button class="option-btn" data-mode="it">IT Calculations</button>
+            <button class="option-btn" data-mode="ai-news">AI News</button>
+        </div>
+        <div id="chatDisplay" class="chat-body">
+            <div class="message bot-message welcome-message">
+                <span class="welcome-text">Welcome to Maverick!</span><br>
+                Your futuristic AI assistant is here to help. Choose an option above to dive in!
+            </div>
+        </div>
+        <div class="chat-footer">
+            <div class="input-group">
+                <input type="text" id="userInput" class="form-control" placeholder="Type your message...">
+                <button id="sendBtn" class="btn btn-send">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            Developed by Maverick - <a href="https://hasitha-chathurangapriya.github.io/Maverick/" target="_blank">Visit Site</a> | 
+            <a href="about.html">About Us</a> | <a href="how-to-use.html">How to Use</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
